@@ -1,4 +1,5 @@
-const Dev = require('../models/Dev.model');
+const Dev = require('mongoose').model('Dev');
+
 const parseStringToArray = require('../utils/parseStringToArray');
 
 module.exports = {

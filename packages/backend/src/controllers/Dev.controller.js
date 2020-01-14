@@ -1,4 +1,5 @@
-const Dev = require('../models/Dev.model');
+const Dev = require('mongoose').model('Dev');
+
 const github_api = require('../services/GitHub.service');
 const parseStringAsArray = require('../utils/parseStringToArray');
 
