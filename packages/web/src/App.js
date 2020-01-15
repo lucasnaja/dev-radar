@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-import Dev from './components/Dev';
-import Form from './components/Form';
+import Dev from '~/components/Dev';
+import Form from '~/components/Form';
 
-import devradar_api from './services/DevRadar.service';
+import devradar_api from '~/services/DevRadar.service';
 
-import './App.css';
-import './Sidebar.css';
-import './Main.css';
+import '~/App.css';
+import '~/Sidebar.css';
+import '~/Main.css';
 
 export default function App() {
     const [devs, setDevs] = useState([]);
