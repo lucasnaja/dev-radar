@@ -9,9 +9,12 @@
     "scripts": {
         "start:backend": "yarn workspace @dev-radar/backend start",
         "start:web": "yarn workspace @dev-radar/web start",
-        "start": "yarn workspaces run start"
+        "start": "concurrently --kill-others \"yarn start:backend\" \"yarn start:web\""
     },
     "workspaces": [
         "packages/*"
-    ]
+    ],
+    "devDependencies": {
+        "concurrently": "^5.0.2"
+    }
 }
