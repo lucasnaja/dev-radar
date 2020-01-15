@@ -1,10 +1,13 @@
 {
-    "name": "devradar",
+    "name": "dev-radar",
+    "description": "Uma maneira de encontrar devs de mesma stack próximos a você.",
     "version": "1.0.0",
-    "main": "index.js",
     "license": "MIT",
     "private": true,
+    "repository": "git@github.com:lucasnaja/dev-radar.git",
+    "author": "Lucas Bittencourt <lucasnaja0@gmail.com>",
     "scripts": {
+        "start:backend": "yarn workspace @dev-radar/backend start",
         "start": "yarn workspaces run start"
     },
     "workspaces": [
