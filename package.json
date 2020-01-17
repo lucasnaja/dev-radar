@@ -8,8 +8,9 @@
     "author": "Lucas Bittencourt <lucasnaja0@gmail.com>",
     "scripts": {
         "start:backend": "yarn workspace @dev-radar/backend start",
-        "start:web": "yarn workspace @dev-radar/web start",
-        "start": "concurrently --kill-others \"yarn start:backend\" \"yarn start:web\""
+        "start:web": "concurrently --kill-others \"yarn start:backend\" \"yarn workspace @dev-radar/web start\"",
+        "start:mobile": "concurrently --kill-others \"yarn start:backend\" \"yarn workspace @dev-radar/mobile start\"",
+        "start": "concurrently --kill-others \"yarn start:backend\" \"yarn workspace @dev-radar/web start\" \"yarn workspace @dev-radar/mobile start\""
     },
     "workspaces": [
         "packages/*"

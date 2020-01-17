@@ -37,6 +37,8 @@
     },
     "devDependencies": {
         "@types/axios": "^0.14.0",
+        "@types/react": "^16.9.17",
+        "@types/react-dom": "^16.9.4",
         "babel-plugin-root-import": "^6.4.1",
         "react-app-rewired": "^2.1.5"
     }
