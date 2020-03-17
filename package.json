@@ -16,6 +16,6 @@
         "packages/*"
     ],
     "devDependencies": {
-        "concurrently": "^5.0.2"
+        "concurrently": "^5.1.0"
     }
 }
